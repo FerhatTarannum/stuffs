@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27626" started-at="2018-11-16T11:55:04Z" finished-at="2018-11-16T11:55:31Z">
+  <suite name="Suite" duration-ms="31906" started-at="2018-11-16T12:37:25Z" finished-at="2018-11-16T12:37:57Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="27626" started-at="2018-11-16T11:55:04Z" finished-at="2018-11-16T11:55:31Z">
+    <test name="Test" duration-ms="31906" started-at="2018-11-16T12:37:25Z" finished-at="2018-11-16T12:37:57Z">
       <class name="random.stuffs.FacebookLoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:random.stuffs.FacebookLoginTest@59494225]" name="setUp" is-config="true" duration-ms="267" started-at="2018-11-16T11:55:03Z" finished-at="2018-11-16T11:55:04Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:random.stuffs.FacebookLoginTest@9f116cc]" name="setUp" is-config="true" duration-ms="321" started-at="2018-11-16T12:37:25Z" finished-at="2018-11-16T12:37:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:random.stuffs.FacebookLoginTest@59494225]" name="browserLaunch" is-config="true" duration-ms="17486" started-at="2018-11-16T11:55:04Z" finished-at="2018-11-16T11:55:21Z">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:random.stuffs.FacebookLoginTest@9f116cc]" name="browserLaunch" is-config="true" duration-ms="13168" started-at="2018-11-16T12:37:25Z" finished-at="2018-11-16T12:37:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="facebookLoginTest()[pri:0, instance:random.stuffs.FacebookLoginTest@59494225]" name="facebookLoginTest" duration-ms="10098" started-at="2018-11-16T11:55:21Z" finished-at="2018-11-16T11:55:31Z">
+        <test-method status="PASS" signature="facebookLoginTest()[pri:0, instance:random.stuffs.FacebookLoginTest@9f116cc]" name="facebookLoginTest" duration-ms="18687" started-at="2018-11-16T12:37:38Z" finished-at="2018-11-16T12:37:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- facebookLoginTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:random.stuffs.FacebookLoginTest@59494225]" name="getResult" is-config="true" duration-ms="13" started-at="2018-11-16T11:55:31Z" finished-at="2018-11-16T11:55:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:random.stuffs.FacebookLoginTest@9f116cc]" name="getResult" is-config="true" duration-ms="9" started-at="2018-11-16T12:37:57Z" finished-at="2018-11-16T12:37:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=facebookLoginTest status=SUCCESS method=FacebookLoginTest.facebookLoginTest()[pri:0, instance:random.stuffs.FacebookLoginTest@59494225] output={null}]]]>
+                <![CDATA[[TestResult name=facebookLoginTest status=SUCCESS method=FacebookLoginTest.facebookLoginTest()[pri:0, instance:random.stuffs.FacebookLoginTest@9f116cc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:random.stuffs.FacebookLoginTest@59494225]" name="tearDown" is-config="true" duration-ms="681" started-at="2018-11-16T11:55:31Z" finished-at="2018-11-16T11:55:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:random.stuffs.FacebookLoginTest@9f116cc]" name="tearDown" is-config="true" duration-ms="845" started-at="2018-11-16T12:37:57Z" finished-at="2018-11-16T12:37:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
