@@ -6,7 +6,6 @@
       <class name="random.stuffs.FacebookLoginTest">
         <methods>
           <include name="browserLaunch"/>
-          <include name="getResult"/>
           <include name="tearDown"/>
           <include name="facebookLoginTest"/>
         </methods>

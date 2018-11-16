@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="random.stuffs.FacebookLoginTest"/>
-      <class name="utility.SetUp"/>
-    </classes>
-  </test> <!-- Test -->
+<suite name="Suite" verbose="1" parallel="false">
+	<test name="Test">
+	 
+	 <!--  <packages>
+  
+      <package name="random.stuffs" />
+     </packages> -->
+	 
+ <classes>
+	 		
+				 <class name="random.stuffs.FacebookLoginTest" /> 
+				 
+		</classes>   
+
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

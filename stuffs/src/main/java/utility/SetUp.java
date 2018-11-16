@@ -36,8 +36,10 @@ public class SetUp {
 
 		Properties p = new Properties();
 		FileInputStream fi = new FileInputStream(
-				"C:\\Users\\Ferhat\\git\\repository\\stuffs\\global.properties");
+				 "C:\\Users\\Ferhat\\git\\repository\\stuffs\\Config Folder\\global.properties");
 		p.load(fi);
+
+		
 
 		System.out.println(p.getProperty("browser"));
 
@@ -52,7 +54,7 @@ public class SetUp {
 			options.addArguments("--start-maximized");
 
 			// To run scripts in headless mode on jenkins
-			//options.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+			// options.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
 
 			Map<String, Object> prefs = new HashMap<String, Object>();
 			prefs.put("credentials_enable_service", false);
@@ -73,25 +75,25 @@ public class SetUp {
 		// TODO Auto-generated method stub
 	}
 
-//	@BeforeSuite(alwaysRun = true)
-//	public void setUp() {
-//		htmlReporter = new ExtentHtmlReporter("C:\\Users\\Ferhat\\git\\repository\\stuffs\\test-report\\AutomationReport.html");
-//		extent = new ExtentReports();
-//		extent.attachReporter(htmlReporter);
-//
-//		extent.setSystemInfo("OS", "Linux");
-//		extent.setSystemInfo("Host Name", "amura-Latitude-3460");
-//		extent.setSystemInfo("Environment", "QA");
-//		extent.setSystemInfo("User Name", "amura");
-//
-//		htmlReporter.config().setChartVisibilityOnOpen(true);
-//		htmlReporter.config().setDocumentTitle("AutomationTesting.in Demo Report");
-//		htmlReporter.config().setReportName("Automation Report");
-//		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-//		htmlReporter.config().setTheme(Theme.DARK);
+	@BeforeSuite(alwaysRun = true)
+	public void setUp() {
+		htmlReporter = new ExtentHtmlReporter
+				("C:\\Users\\Ferhat\\git\\repository\\stuffs\\test-report\\AutomationReport.html");
+		extent = new ExtentReports();
+		extent.attachReporter(htmlReporter);
 
-//}
+		extent.setSystemInfo("OS", "Linux");
+		extent.setSystemInfo("Host Name", "amura-Latitude-3460");
+		extent.setSystemInfo("Environment", "QA");
+		extent.setSystemInfo("User Name", "amura");
 
+		htmlReporter.config().setChartVisibilityOnOpen(true);
+		htmlReporter.config().setDocumentTitle("AutomationTesting.in Demo Report");
+		htmlReporter.config().setReportName("Automation Report");
+		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
+		htmlReporter.config().setTheme(Theme.DARK);
+
+	}
 	@AfterMethod(alwaysRun = true)
 	public void getResult(ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
