@@ -25,6 +25,8 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import cucumber.api.java.en.Given;
+
 public class SetUp {
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
@@ -32,6 +34,7 @@ public class SetUp {
 
 	public WebDriver driver = null;
 
+	
 	public void mysetUp() throws IOException {
 
 		Properties p = new Properties();
@@ -63,7 +66,7 @@ public class SetUp {
 
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			driver = new ChromeDriver(capabilities);
+			driver = new ChromeDriver();
 		} else {
 			Internetexplorer();
 		}
@@ -82,10 +85,10 @@ public class SetUp {
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 
-		extent.setSystemInfo("OS", "Linux");
-		extent.setSystemInfo("Host Name", "amura-Latitude-3460");
+		extent.setSystemInfo("OS", "Windows");
+		extent.setSystemInfo("Host Name", "LAPTOP-68GSKGTP");
 		extent.setSystemInfo("Environment", "QA");
-		extent.setSystemInfo("User Name", "amura");
+		extent.setSystemInfo("User Name", "Ferhat");
 
 		htmlReporter.config().setChartVisibilityOnOpen(true);
 		htmlReporter.config().setDocumentTitle("AutomationTesting.in Demo Report");
